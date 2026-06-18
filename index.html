@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aura Coffee Roasters - Premium small-batch specialty coffee sourced ethically and roasted with passion. Explore our signature roasts and brewing guides.">
+  <title>Aura Coffee Roasters | Artisanal Specialty Coffee</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#" class="logo" id="logoLink">
+        <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="currentColor"/>
+          <path d="M12 6C8.69 6 6 8.69 6 12C6 14.76 7.88 17.06 10.43 17.76C10.74 17.85 11 17.61 11 17.29V15.7C11 15.34 11.23 15.02 11.57 14.9C12.92 14.43 13.9 13.24 13.97 11.78C14.05 10.14 12.83 8.71 11.19 8.63C9.43 8.54 8 9.96 8 11.7C8 12.42 8.32 13.06 8.82 13.5C9.12 13.76 9.17 14.21 8.94 14.53L8.85 14.65C8.56 15.05 7.98 15.02 7.73 14.59C7.03 13.38 7.15 11.83 8.1 10.74C9.28 9.4 11.29 9.3 12.6 10.51C13.8 11.62 13.88 13.43 12.89 14.62C12.44 15.16 12 15.84 12 16.59V17.3C12 17.69 12.37 17.97 12.75 17.86C15.83 17.02 18 14.26 18 11C18 7.69 15.31 5 12 6Z" fill="currentColor"/>
+        </svg>
+        <span>AURA</span> COFFEE
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul>
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#products" class="nav-link">Shop Roasts</a></li>
+          <li><a href="#brew-guide" class="nav-link">Brew Guides</a></li>
+          <li><a href="#testimonials" class="nav-link">Community</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-trigger" id="cartTrigger" aria-label="Open Shopping Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge" id="cartBadge">0</span>
+        </button>
+        <a href="#products" class="btn btn-secondary btn-sm order-beans-btn">Order Beans</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-subtitle">Artisanal & Small-Batch</span>
+          <h1 class="hero-title">Elevate Your Daily Coffee Ritual</h1>
+          <p class="hero-description">
+            Sustainably sourced, meticulously roasted single-origin coffees delivered fresh to your door. Experience tasting profiles crafted to awaken your senses.
+          </p>
+          <div class="hero-actions-container">
+            <a href="#products" class="btn btn-primary">Explore Our Roasts</a>
+            <a href="#story" class="btn btn-outline">Our Philosophy</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story / Philosophy Section -->
+    <section id="story" class="story-section reveal-on-scroll">
+      <div class="container story-container">
+        <div class="story-grid">
+          <div class="story-image-wrapper reveal-scale">
+            <img src="assets/story.png" alt="Freshly roasted coffee beans cooling in a metal roasting tray" class="story-image" loading="lazy">
+            <div class="story-badge">
+              <span class="badge-number">100%</span>
+              <span class="badge-text">Traceable Beans</span>
+            </div>
+          </div>
+          <div class="story-content reveal-slide-up">
+            <span class="section-tag">Crafted with Intention</span>
+            <h2 class="section-title">Roasting with a Respect for the Craft</h2>
+            <p class="story-paragraph">
+              At Aura Coffee Roasters, we believe every cup tells a story of origin, soil, climate, and hard work. We partner directly with smallholder farming cooperatives to source the finest specialty-grade green coffee.
+            </p>
+            <p class="story-paragraph">
+              Our master roasters apply tailored heat profiles to highlight the organic sweetness and unique terroir of each batch. We roast weekly and ship immediately, ensuring your coffee arrives at peak flavor complexity.
+            </p>
+            
+            <div class="story-features">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                    <path d="M12 6V12L16 14"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="feature-title">Roast-to-Order Freshness</h4>
+                  <p class="feature-desc">Shipped within 24 hours of roasting for peak aroma.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                    <path d="M2 17L12 22L22 17"/>
+                    <path d="M2 12L12 17L22 12"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="feature-title">Direct Trade Sourcing</h4>
+                  <p class="feature-desc">Fair wages and sustainable development for growers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3D Coffee Cup Experience Section -->
+    <section id="cup-experience" class="cup-experience-section reveal-on-scroll">
+      <div class="container cup-experience-container">
+        <div class="cup-grid">
+          <div class="cup-canvas-wrapper reveal-scale">
+            <div class="canvas-loading" id="canvasLoading">
+              <div class="spinner"></div>
+              <p>Roasting 3D Experience...</p>
+            </div>
+            <div class="cup-3d-container" id="cup3dContainer"></div>
+            <div class="canvas-hint">Drag to rotate. Scroll to spin.</div>
+          </div>
+          
+          <div class="cup-experience-content reveal-slide-up">
+            <span class="section-tag">Sensory Design</span>
+            <h2 class="section-title">The Anatomy of a Perfect Pour</h2>
+            <p class="cup-paragraph">
+              Every curve and thickness of our signature ceramics is custom-molded to concentrate the floral aromatics of light roasts and maintain the thick crema of dark coffee.
+            </p>
+            
+            <div class="cup-details">
+              <div class="cup-detail-item">
+                <div class="cup-detail-number">01</div>
+                <div>
+                  <h4 class="cup-detail-title">Thermal Insulation</h4>
+                  <p class="cup-detail-desc">Double-walled high-density porcelain keeps coffee at the ideal 65°C drinking temperature longer.</p>
+                </div>
+              </div>
+              <div class="cup-detail-item">
+                <div class="cup-detail-number">02</div>
+                <div>
+                  <h4 class="cup-detail-title">Aroma Trap Contour</h4>
+                  <p class="cup-detail-desc">Conical inner slope channels rising steam upwards, focusing delicate peach and chocolate aromas toward your nose.</p>
+                </div>
+              </div>
+              <div class="cup-detail-item">
+                <div class="cup-detail-number">03</div>
+                <div>
+                  <h4 class="cup-detail-title">Tactile Ergonomics</h4>
+                  <p class="cup-detail-desc">A balancing handle centered precisely on the cup's center of gravity makes your morning ritual feel light and natural.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section id="products" class="products-section reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Direct From Origin</span>
+          <h2 class="section-title">Explore Our Signature Roasts</h2>
+          <p class="section-subtitle">Meticulously sourced, micro-batch roasted beans sorted by flavour profiles.</p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product Card 1: Light Roast -->
+          <article class="product-card reveal-slide-up">
+            <div class="product-img-wrapper">
+              <img src="assets/product-light.png" alt="Aura Solstice Bloom - Ethiopian Yirgacheffe Light Roast bag" class="product-image" loading="lazy">
+              <span class="product-badge badge-light">Light Roast</span>
+            </div>
+            <div class="product-info">
+              <div class="product-meta">
+                <span class="product-origin">Ethiopia | Yirgacheffe</span>
+                <div class="product-rating">
+                  <span class="star">★</span> 4.9 <span class="review-count">(42)</span>
+                </div>
+              </div>
+              <h3 class="product-title">Solstice Bloom</h3>
+              <p class="product-notes">Tasting Notes: <strong>Peach, Jasmine, Citrus</strong></p>
+              <p class="product-description">
+                A delicate, floral cup characterized by sweet honey undertones and a bright, tea-like acidity. Best enjoyed as a pour-over.
+              </p>
+              <div class="product-footer">
+                <span class="product-price">$19.50 <span class="price-size">/ 340g</span></span>
+                <button class="btn btn-secondary btn-sm add-to-cart-btn" data-product="Solstice Bloom">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 2: Medium Roast -->
+          <article class="product-card reveal-slide-up">
+            <div class="product-img-wrapper">
+              <img src="assets/product-medium.png" alt="Aura Amber Hearth - Colombian Single Origin Medium Roast bag" class="product-image" loading="lazy">
+              <span class="product-badge badge-medium">Medium Roast</span>
+            </div>
+            <div class="product-info">
+              <div class="product-meta">
+                <span class="product-origin">Colombia | Huila</span>
+                <div class="product-rating">
+                  <span class="star">★</span> 4.8 <span class="review-count">(58)</span>
+                </div>
+              </div>
+              <h3 class="product-title">Amber Hearth</h3>
+              <p class="product-notes">Tasting Notes: <strong>Toffee, Red Apple, Milk Chocolate</strong></p>
+              <p class="product-description">
+                A highly balanced coffee with a rich caramel sweetness, crisp fruit acidity, and a smooth milk chocolate finish. Excellent all-rounder.
+              </p>
+              <div class="product-footer">
+                <span class="product-price">$18.50 <span class="price-size">/ 340g</span></span>
+                <button class="btn btn-secondary btn-sm add-to-cart-btn" data-product="Amber Hearth">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product Card 3: Dark Roast -->
+          <article class="product-card reveal-slide-up">
+            <div class="product-img-wrapper">
+              <img src="assets/product-dark.png" alt="Aura Eclipse Roast - Sumatran Mandheling Dark Roast bag" class="product-image" loading="lazy">
+              <span class="product-badge badge-dark">Dark Roast</span>
+            </div>
+            <div class="product-info">
+              <div class="product-meta">
+                <span class="product-origin">Indonesia | Sumatra</span>
+                <div class="product-rating">
+                  <span class="star">★</span> 5.0 <span class="review-count">(31)</span>
+                </div>
+              </div>
+              <h3 class="product-title">Eclipse Roast</h3>
+              <p class="product-notes">Tasting Notes: <strong>Dark Cacao, Cedar, Smoky Spice</strong></p>
+              <p class="product-description">
+                Bold, full-bodied, and deeply satisfying. This low-acidity cup highlights earthy cedar aromas, rich dark cocoa, and lingering sweet spice.
+              </p>
+              <div class="product-footer">
+                <span class="product-price">$20.00 <span class="price-size">/ 340g</span></span>
+                <button class="btn btn-secondary btn-sm add-to-cart-btn" data-product="Eclipse Roast">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brew Guide Section -->
+    <section id="brew-guide" class="brew-guide-section reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Home Barista Academy</span>
+          <h2 class="section-title">Master the Art of Brewing</h2>
+          <p class="section-subtitle">Follow our simple guides to extract the full flavor potential of your beans.</p>
+        </div>
+
+        <div class="brew-container">
+          <div class="brew-tabs">
+            <button class="brew-tab active" data-target="pour-over">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                <path d="M12 6c-3.31 0-6 2.69-6 6h2c0-2.21 1.79-4 4-4V6z"/>
+              </svg>
+              V60 Pour Over
+            </button>
+            <button class="brew-tab" data-target="french-press">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 5V3a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v2H4v2h1v11a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V7h1V5h-3zM9 4h6v1H9V4zm6 14H9v-1h6v1zm0-3H9v-1h6v1zm0-3H9v-1h6v1z"/>
+              </svg>
+              French Press
+            </button>
+          </div>
+
+          <!-- Tab Content 1: Pour Over -->
+          <div class="brew-content active" id="pour-over">
+            <div class="brew-grid">
+              <div class="brew-details">
+                <h3 class="brew-method-title">V60 Pour Over Guide</h3>
+                <p class="brew-method-desc">
+                  This method highlights clean, complex, and light-bodied notes. Ideal for showcasing floral single-origins.
+                </p>
+                <div class="brew-metrics">
+                  <div class="metric">
+                    <span class="metric-label">Ratio</span>
+                    <span class="metric-val">1 : 16</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-label">Grind Size</span>
+                    <span class="metric-val">Medium-Fine</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-label">Water Temp</span>
+                    <span class="metric-val">93°C (200°F)</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-label">Time</span>
+                    <span class="metric-val">3:00 mins</span>
+                  </div>
+                </div>
+                
+                <h4 class="brew-steps-title">Step-by-step Process:</h4>
+                <ol class="brew-steps-list">
+                  <li><strong>Prepare:</strong> Rinse filter paper with hot water, discard water. Add 20g of ground coffee and tap to level.</li>
+                  <li><strong>The Bloom:</strong> Pour 40g of water, wet all grounds evenly. Wait 35 seconds to let the gases escape.</li>
+                  <li><strong>Main Pour:</strong> Pour in circular motions up to 150g, maintaining a slow and steady stream.</li>
+                  <li><strong>Final Pour:</strong> Once drained slightly, pour again up to 320g. Give the dripper a gentle swirl and let it drip fully.</li>
+                </ol>
+              </div>
+              <div class="brew-image-wrapper">
+                <img src="assets/brew-pour-over.png" alt="Pour over coffee dripping into carafe" class="brew-image" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab Content 2: French Press -->
+          <div class="brew-content" id="french-press">
+            <div class="brew-grid">
+              <div class="brew-details">
+                <h3 class="brew-method-title">French Press Guide</h3>
+                <p class="brew-method-desc">
+                  This method yields a robust, full-bodied, and rich cup. Great for bringing out chocolatey and earthy flavors.
+                </p>
+                <div class="brew-metrics">
+                  <div class="metric">
+                    <span class="metric-label">Ratio</span>
+                    <span class="metric-val">1 : 15</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-label">Grind Size</span>
+                    <span class="metric-val">Coarse</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-label">Water Temp</span>
+                    <span class="metric-val">95°C (203°F)</span>
+                  </div>
+                  <div class="metric">
+                    <span class="metric-label">Time</span>
+                    <span class="metric-val">4:00 mins</span>
+                  </div>
+                </div>
+                
+                <h4 class="brew-steps-title">Step-by-step Process:</h4>
+                <ol class="brew-steps-list">
+                  <li><strong>Dose:</strong> Add 30g of coarsely ground coffee to your empty French press container.</li>
+                  <li><strong>Wet:</strong> Pour in 450g of hot water, making sure all coffee grounds are fully saturated.</li>
+                  <li><strong>Steep:</strong> Place the lid on top (don't plunge yet) and let it steep for exactly 4 minutes.</li>
+                  <li><strong>Plunge & Pour:</strong> Gently and slowly press the plunger down. Immediately decant into cups to avoid over-extraction.</li>
+                </ol>
+              </div>
+              <div class="brew-image-wrapper">
+                <img src="assets/brew-french-press.png" alt="French press coffee maker with carafe" class="brew-image" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Aura Community</span>
+          <h2 class="section-title">Loved by Coffee Lovers</h2>
+          <p class="section-subtitle">Here is what our recurring subscribers have to say about the quality and taste.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card reveal-slide-up">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "The freshness of Aura Coffee is unmatched. The Solstice Bloom light roast has become my daily staple—it's like drinking a fresh floral peach tea with coffee body. Absolutely stunning."
+            </p>
+            <cite class="testimonial-author">
+              <div class="author-avatar">
+                <span>SC</span>
+              </div>
+              <div class="author-info">
+                <strong class="author-name">Sarah Chen</strong>
+                <span class="author-role">Verified Subscriber</span>
+              </div>
+            </cite>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal-slide-up">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "I subscribed to the Amber Hearth medium roast. It arrives exactly three days after the roast date. The milk chocolate and caramel notes are perfect for espresso shots or french press."
+            </p>
+            <cite class="testimonial-author">
+              <div class="author-avatar">
+                <span>MH</span>
+              </div>
+              <div class="author-info">
+                <strong class="author-name">Marcus Hayes</strong>
+                <span class="author-role">Home Barista</span>
+              </div>
+            </cite>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal-slide-up">
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">
+              "Eclipse Roast is a masterclass in dark roasts. It is incredibly rich, dark and smoky but completely lacks that burnt bitterness you find in mass brands. Customer support is incredible, too."
+            </p>
+            <cite class="testimonial-author">
+              <div class="author-avatar">
+                <span>EL</span>
+              </div>
+              <div class="author-info">
+                <strong class="author-name">Elena Rostova</strong>
+                <span class="author-role">Aura Club Member</span>
+              </div>
+            </cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-card">
+          <div class="newsletter-content">
+            <h2 class="newsletter-title">Join the Aura Club</h2>
+            <p class="newsletter-desc">Subscribe for 10% off your first bag, exclusive micro-lot releases, and pro brewing tips.</p>
+          </div>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required aria-label="Email Address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="newsletter-msg" id="newsletterMsg">Thank you! Welcome to the club. Check your inbox for the discount code.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo footer-logo">
+          <span>AURA</span> COFFEE
+        </a>
+        <p class="brand-desc">
+          Crafting premium specialty coffee through sustainable direct trade partnerships and meticulous roasts.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-nav">
+        <h4 class="footer-title">Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#products">Shop Roasts</a></li>
+          <li><a href="#brew-guide">Brew Guides</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-hours">
+        <h4 class="footer-title">Roastery Hours</h4>
+        <p>Monday – Friday: 7:00 AM – 4:00 PM</p>
+        <p>Saturday – Sunday: 8:00 AM – 5:00 PM</p>
+        <p class="location-text">100 Brew Street, Roast Valley</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-title">Get in Touch</h4>
+        <p>Email: hello@auracoffee.com</p>
+        <p>Phone: (555) 234-7890</p>
+        <p class="footer-cta-text">Looking to wholesale? <a href="#">Click here</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <p>&copy; 2026 Aura Coffee Roasters. All rights reserved.</p>
+        <p class="footer-credits">Made with care for coffee lovers.</p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Cart Drawer Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-drawer-header">
+        <h3 class="cart-drawer-title">Your Cart</h3>
+        <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close Cart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="cart-items-container" id="cartItemsContainer">
+        <!-- Dynamic cart items will be injected here -->
+      </div>
+      
+      <div class="cart-drawer-footer">
+        <div class="cart-summary">
+          <span class="summary-label">Subtotal:</span>
+          <span class="summary-total" id="cartSubtotal">$0.00</span>
+        </div>
+        <p class="cart-shipping-notice">Shipping & taxes calculated at checkout.</p>
+        <button class="btn btn-primary w-100" id="checkoutBtn" disabled>Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <!-- Order Success Modal -->
+    <div class="modal-overlay" id="successModalOverlay"></div>
+    <div class="success-modal" id="successModal" role="dialog" aria-modal="true">
+      <div class="success-modal-content">
+        <div class="success-icon-wrapper">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <h2 class="modal-title">Order Succeeded!</h2>
+        <p class="modal-message">
+          Thank you for your purchase. We are preparing your fresh specialty roasts. A confirmation email has been sent to your inbox.
+        </p>
+        <div class="order-details-summary">
+          <div>Order Number: <strong id="successOrderNumber">#AURA-1024</strong></div>
+          <div>Est. Delivery: <strong>2-3 Business Days</strong></div>
+        </div>
+        <button class="btn btn-primary" id="successModalCloseBtn">Back to Roastery</button>
+      </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
